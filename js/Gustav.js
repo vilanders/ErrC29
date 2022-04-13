@@ -21,6 +21,7 @@ class Gustav {
         rect(-10, -20, this.width, this.height); 
         pop(); 
         arc(this.x - 30, this.y + 90, 60, 180, PI, TWO_PI); 
+         // arc(this.x - 30, this.y + 90, 140, 200, PI, TWO_PI); // usa estos valores, nos estorbaba el codigo extra de sketch :) 
         noFill();
     }
 }
