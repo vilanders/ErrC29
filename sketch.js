@@ -14,7 +14,7 @@ var bala;
 
 function preload() {
   backgroundImg = loadImage("./assets/background.gif");
-  
+//towerImage = loadImage("./assets/tower.png"); // AQUI ES OTRA FORMA DE AGREGAR LA TORRE.   
 
 }
 
@@ -28,8 +28,8 @@ function setup() {
   angle = -PI/4;//45°
 
 
-  rectMode(CENTER);
-  ellipseMode(RADIUS);
+  rectMode(CENTER); // SUGIERO BORRAR ESTA XQ YA ESTAN EN LA CLASE
+  ellipseMode(RADIUS); // SUGIERO BORRAR ESTA XQ YA ESTAN EN LA CLASE
   //Usa una nueva palabra clave para crear un objeto torre.(desafío 4)
   tower = new Tower(150,350,160,310);
   pistola = new Gustav(180,110,100,50,angle);
@@ -51,7 +51,7 @@ function draw()
  
 }
 
-function disparo() 
+function disparo() //SE TIENE QUE LLAMAR: keyReleased
 {
   if(keyCode===DOWN_ARROW)
   {
